@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Personalize View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PersonalizeViewController" customModule="PersonalizeProfile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalize your Schoters homepage" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryG-QD-HE3">
+                                <rect key="frame" x="15" y="60" width="345" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="21"/>
+                                <color key="textColor" red="0.19215686274509802" green="0.19215686274509802" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xef-Bs-wAA">
+                                <rect key="frame" x="15" y="104.5" width="345" height="61"/>
+                                <string key="text">Pick 5 top scholarship categories that you are interested to help us deliver the most relevant information with your preferences</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Tn5-td-Zns">
+                                <rect key="frame" x="15" y="189.5" width="345" height="397.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="4" id="fXG-5c-3pe" customClass="AlignedCollectionViewFlowLayout" customModule="AlignedCollectionViewFlowLayout">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="1JN-sU-tp2" customClass="ScholarshipCollectionViewCell" customModule="PersonalizeProfile" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="112" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="112" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYl-ex-dog" customClass="RoundedButton" customModule="PersonalizeProfile" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="112" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="xJn-RM-Lc0"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <state key="normal" title="S1/Bachelor">
+                                                        <color key="titleColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="scholarshipButton:" destination="1JN-sU-tp2" eventType="touchUpInside" id="aFH-9O-KfX"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="OYl-ex-dog" firstAttribute="leading" secondItem="1JN-sU-tp2" secondAttribute="leading" id="72G-op-IOX"/>
+                                            <constraint firstItem="OYl-ex-dog" firstAttribute="top" secondItem="1JN-sU-tp2" secondAttribute="top" id="KJ2-gF-4t6"/>
+                                            <constraint firstAttribute="trailing" secondItem="OYl-ex-dog" secondAttribute="trailing" id="Mha-On-Jel"/>
+                                        </constraints>
+                                        <size key="customSize" width="112" height="40"/>
+                                        <connections>
+                                            <outlet property="scholarshipCategoriesButton" destination="OYl-ex-dog" id="tMy-4A-GuU"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="MSc-GA-xkt"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zmW-nC-k16"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRP-ga-7l1">
+                                <rect key="frame" x="15" y="617" width="345" height="40"/>
+                                <color key="backgroundColor" red="0.37254901960784315" green="0.60784313725490191" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9SZ-3G-Hzw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneCategoriesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MXp-Ne-yew"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ryG-QD-HE3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="3BF-BU-6vD"/>
+                            <constraint firstItem="SRP-ga-7l1" firstAttribute="trailing" secondItem="xef-Bs-wAA" secondAttribute="trailing" id="67V-Ik-wNH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ryG-QD-HE3" secondAttribute="trailing" constant="15" id="6Kp-pR-R0n"/>
+                            <constraint firstItem="Tn5-td-Zns" firstAttribute="leading" secondItem="xef-Bs-wAA" secondAttribute="leading" id="EXv-Ig-Bvc"/>
+                            <constraint firstItem="SRP-ga-7l1" firstAttribute="top" secondItem="Tn5-td-Zns" secondAttribute="bottom" constant="30" id="I1a-Tt-WeP"/>
+                            <constraint firstItem="SRP-ga-7l1" firstAttribute="leading" secondItem="xef-Bs-wAA" secondAttribute="leading" id="I1e-YG-Obi"/>
+                            <constraint firstItem="ryG-QD-HE3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="LDG-hv-zUr"/>
+                            <constraint firstItem="xef-Bs-wAA" firstAttribute="leading" secondItem="ryG-QD-HE3" secondAttribute="leading" id="NBd-XD-JJf"/>
+                            <constraint firstItem="Tn5-td-Zns" firstAttribute="trailing" secondItem="xef-Bs-wAA" secondAttribute="trailing" id="PzS-9i-Tyh"/>
+                            <constraint firstItem="xef-Bs-wAA" firstAttribute="top" secondItem="ryG-QD-HE3" secondAttribute="bottom" constant="20" id="Qpb-af-8rS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SRP-ga-7l1" secondAttribute="bottom" constant="10" id="Tj9-vl-qPN"/>
+                            <constraint firstItem="xef-Bs-wAA" firstAttribute="trailing" secondItem="ryG-QD-HE3" secondAttribute="trailing" id="b6n-OW-nqc"/>
+                            <constraint firstItem="Tn5-td-Zns" firstAttribute="top" secondItem="xef-Bs-wAA" secondAttribute="bottom" constant="24" id="u8W-Oh-HY6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scholarshipCollectionView" destination="Tn5-td-Zns" id="p3f-QR-f7M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="D6R-4A-p0I">
+            <objects>
+                <viewController id="vj3-zp-zWQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ds-tz-gxV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="TRa-Vi-vmx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xLQ-ai-wjq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="117"/>
+        </scene>
+    </scenes>
+</document>
