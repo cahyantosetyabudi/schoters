@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		46354F8594B0FBD3FBD68C8E /* Pods_PersonalizeProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57AAB2E6069A8B495F16FC3 /* Pods_PersonalizeProfile.framework */; };
+		7942F72721CFC6B90013B3F1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7942F72621CFC6B90013B3F1 /* HomeView.swift */; };
+		7942F72921CFCAB70013B3F1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7942F72821CFCAB70013B3F1 /* HomeViewController.swift */; };
+		7942F72B21CFCC1F0013B3F1 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7942F72A21CFCC1F0013B3F1 /* HomeTableViewCell.swift */; };
+		7942F72E21CFDAA20013B3F1 /* HomeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7942F72C21CFDAA20013B3F1 /* HomeHeaderCell.swift */; };
+		7942F72F21CFDAA20013B3F1 /* HomeHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7942F72D21CFDAA20013B3F1 /* HomeHeaderCell.xib */; };
 		79F36F2021CF384100611472 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F36F1F21CF384100611472 /* AppDelegate.swift */; };
 		79F36F2521CF384100611472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F36F2321CF384100611472 /* Main.storyboard */; };
 		79F36F2721CF384100611472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F36F2621CF384100611472 /* Assets.xcassets */; };
@@ -21,6 +26,11 @@
 /* Begin PBXFileReference section */
 		1364FB6619A3F9EE209DC405 /* Pods-PersonalizeProfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalizeProfile.release.xcconfig"; path = "Pods/Target Support Files/Pods-PersonalizeProfile/Pods-PersonalizeProfile.release.xcconfig"; sourceTree = "<group>"; };
 		407D087AD05AF8407AF648C8 /* Pods-PersonalizeProfile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalizeProfile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonalizeProfile/Pods-PersonalizeProfile.debug.xcconfig"; sourceTree = "<group>"; };
+		7942F72621CFC6B90013B3F1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7942F72821CFCAB70013B3F1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7942F72A21CFCC1F0013B3F1 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		7942F72C21CFDAA20013B3F1 /* HomeHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderCell.swift; sourceTree = "<group>"; };
+		7942F72D21CFDAA20013B3F1 /* HomeHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderCell.xib; sourceTree = "<group>"; };
 		79F36F1C21CF384100611472 /* PersonalizeProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalizeProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F36F1F21CF384100611472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79F36F2421CF384100611472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +95,10 @@
 				79F36F3421CF476600611472 /* PersonalizeViewController.swift */,
 				79F36F3621CF489800611472 /* ScholarshipCategories.swift */,
 				79F36F3821CF61BE00611472 /* ScholarshipCollectionViewCell.swift */,
+				7942F72821CFCAB70013B3F1 /* HomeViewController.swift */,
+				7942F72A21CFCC1F0013B3F1 /* HomeTableViewCell.swift */,
+				7942F72C21CFDAA20013B3F1 /* HomeHeaderCell.swift */,
+				7942F72D21CFDAA20013B3F1 /* HomeHeaderCell.xib */,
 			);
 			path = PersonalizeProfile;
 			sourceTree = "<group>";
@@ -93,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				79F36F3121CF3C4D00611472 /* RoundedButton.swift */,
+				7942F72621CFC6B90013B3F1 /* HomeView.swift */,
 			);
 			path = Designable;
 			sourceTree = "<group>";
@@ -168,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79F36F2A21CF384100611472 /* LaunchScreen.storyboard in Resources */,
+				7942F72F21CFDAA20013B3F1 /* HomeHeaderCell.xib in Resources */,
 				79F36F2721CF384100611472 /* Assets.xcassets in Resources */,
 				79F36F2521CF384100611472 /* Main.storyboard in Resources */,
 			);
@@ -237,7 +253,11 @@
 				79F36F3721CF489800611472 /* ScholarshipCategories.swift in Sources */,
 				79F36F3521CF476600611472 /* PersonalizeViewController.swift in Sources */,
 				79F36F3921CF61BE00611472 /* ScholarshipCollectionViewCell.swift in Sources */,
+				7942F72721CFC6B90013B3F1 /* HomeView.swift in Sources */,
 				79F36F3221CF3C4D00611472 /* RoundedButton.swift in Sources */,
+				7942F72921CFCAB70013B3F1 /* HomeViewController.swift in Sources */,
+				7942F72B21CFCC1F0013B3F1 /* HomeTableViewCell.swift in Sources */,
+				7942F72E21CFDAA20013B3F1 /* HomeHeaderCell.swift in Sources */,
 				79F36F2021CF384100611472 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

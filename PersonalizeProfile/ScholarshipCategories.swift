@@ -29,8 +29,9 @@ struct ScholarshipCategories: Codable {
         descriptionId = try container.decode(String.self, forKey: .descriptionId)
         createdAt = try container.decode(String.self, forKey: .createdAt)
         updatedAt = try container.decode(String.self, forKey: .updatedAt)
-        publishedAt = try container.decode(String.self, forKey: .publishedAt)
         imageUrl = try container.decode(String.self, forKey: .imageUrl)
+        publishedAt = try container.decode(String.self, forKey: .publishedAt)
+
     }
     
     enum CodingKeys: String, CodingKey {

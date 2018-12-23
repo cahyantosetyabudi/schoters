@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -130,26 +131,122 @@
                     </view>
                     <connections>
                         <outlet property="scholarshipCollectionView" destination="Tn5-td-Zns" id="p3f-QR-f7M"/>
+                        <segue destination="vj3-zp-zWQ" kind="show" identifier="home" id="2TF-F0-j0P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="D6R-4A-p0I">
             <objects>
-                <viewController id="vj3-zp-zWQ" sceneMemberID="viewController">
+                <viewController id="vj3-zp-zWQ" customClass="HomeViewController" customModule="PersonalizeProfile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ds-tz-gxV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="303" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Eaa-Pt-mFp">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="303" id="XpT-54-Uqw" customClass="HomeTableViewCell" customModule="PersonalizeProfile" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="303"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XpT-54-Uqw" id="DWs-Hy-c6u">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="303"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZI8-IH-YHt" customClass="HomeView" customModule="PersonalizeProfile" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="11" width="345" height="280.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beasiswa tanpa gelar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYU-tl-L9G">
+                                                            <rect key="frame" x="16" y="227.5" width="321" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="scholarship" translatesAutoresizingMaskIntoConstraints="NO" id="JQz-5y-Esj">
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="211.5"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="2 Desember 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swf-7b-erU">
+                                                            <rect key="frame" x="16" y="255.5" width="321" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Swf-7b-erU" firstAttribute="leading" secondItem="ZI8-IH-YHt" secondAttribute="leading" constant="16" id="7ff-Mj-Ebg"/>
+                                                        <constraint firstItem="Swf-7b-erU" firstAttribute="top" secondItem="XYU-tl-L9G" secondAttribute="bottom" constant="4" id="9do-HZ-mjk"/>
+                                                        <constraint firstItem="JQz-5y-Esj" firstAttribute="top" secondItem="ZI8-IH-YHt" secondAttribute="top" id="NR9-dB-uzr"/>
+                                                        <constraint firstItem="JQz-5y-Esj" firstAttribute="leading" secondItem="ZI8-IH-YHt" secondAttribute="leading" id="PPR-pM-av3"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Swf-7b-erU" secondAttribute="trailing" constant="8" id="QQU-5X-aXD"/>
+                                                        <constraint firstItem="XYU-tl-L9G" firstAttribute="top" secondItem="JQz-5y-Esj" secondAttribute="bottom" constant="16" id="XRu-a9-1ZJ"/>
+                                                        <constraint firstAttribute="width" secondItem="ZI8-IH-YHt" secondAttribute="height" multiplier="69:56" id="bmn-jL-YKz"/>
+                                                        <constraint firstItem="XYU-tl-L9G" firstAttribute="trailing" secondItem="Swf-7b-erU" secondAttribute="trailing" id="kBA-o2-fvA"/>
+                                                        <constraint firstAttribute="trailing" secondItem="JQz-5y-Esj" secondAttribute="trailing" id="nx8-Gx-J0u"/>
+                                                        <constraint firstItem="XYU-tl-L9G" firstAttribute="leading" secondItem="Swf-7b-erU" secondAttribute="leading" id="p9j-oG-uyC"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Swf-7b-erU" secondAttribute="bottom" constant="8" id="q3l-5Q-s8E"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="0.20000000000000001"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZI8-IH-YHt" firstAttribute="top" secondItem="DWs-Hy-c6u" secondAttribute="top" constant="11" id="37b-iX-WsC"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZI8-IH-YHt" secondAttribute="trailing" constant="15" id="CkP-ph-qAs"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZI8-IH-YHt" secondAttribute="bottom" constant="11" id="fmv-NN-BIc"/>
+                                                <constraint firstItem="ZI8-IH-YHt" firstAttribute="leading" secondItem="DWs-Hy-c6u" secondAttribute="leading" constant="15" id="tXP-1y-auM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="datePostedScholarshipLabel" destination="Swf-7b-erU" id="o33-IM-yge"/>
+                                            <outlet property="nameScholarshipLabel" destination="XYU-tl-L9G" id="Tv1-9I-ub9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vj3-zp-zWQ" id="vQl-jW-odK"/>
+                                    <outlet property="delegate" destination="vj3-zp-zWQ" id="3GW-7T-Un3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TRa-Vi-vmx" firstAttribute="bottom" secondItem="Eaa-Pt-mFp" secondAttribute="bottom" id="5L1-vh-lI9"/>
+                            <constraint firstItem="Eaa-Pt-mFp" firstAttribute="top" secondItem="TRa-Vi-vmx" secondAttribute="top" id="RML-mC-slE"/>
+                            <constraint firstItem="TRa-Vi-vmx" firstAttribute="trailing" secondItem="Eaa-Pt-mFp" secondAttribute="trailing" id="qdW-px-QE8"/>
+                            <constraint firstItem="Eaa-Pt-mFp" firstAttribute="leading" secondItem="TRa-Vi-vmx" secondAttribute="leading" id="xPg-qj-hEe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TRa-Vi-vmx"/>
                     </view>
+                    <connections>
+                        <outlet property="homeTableView" destination="Eaa-Pt-mFp" id="FyL-zJ-AtX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xLQ-ai-wjq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="926" y="117"/>
+            <point key="canvasLocation" x="925.60000000000002" y="116.49175412293854"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="scholarship" width="500" height="333"/>
+    </resources>
 </document>

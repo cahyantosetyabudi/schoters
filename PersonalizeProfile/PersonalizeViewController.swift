@@ -25,7 +25,14 @@ class PersonalizeViewController: UIViewController {
     }
     
     @IBAction func doneCategoriesButton(_ sender: UIButton) {
-        print(selectedScholarship)
+        performSegue(withIdentifier: "home", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "home" {
+            let destinationViewController = segue.destination as! HomeViewController
+            destinationViewController.scholarshipCategories = scholarshipCategories
+        }
     }
     
     let session = URLSession.shared
